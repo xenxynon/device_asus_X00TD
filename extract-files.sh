@@ -1,16 +1,11 @@
 #!/bin/bash
 #
-<<<<<<< HEAD
 # Copyright (C) 2016 The CyanogenMod Project
 # Copyright (C) 2017-2020 The LineageOS Project
-=======
-# Copyright (C) 2020 The LineageOS Project
->>>>>>> b342f4c (X00TD: Import Lineage's commmon extract_utils)
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
-<<<<<<< HEAD
 set -e
 
 # Load extract_utils and do some sanity checks
@@ -65,7 +60,7 @@ fi
 
 function blob_fixup() {
     case "${1}" in
-         
+
         lib64/libwfdnative.so | lib/libwfdnative.so | lib/libwfdservice.so | lib/libwfdcommonutils.so | lib/libwfdmmsrc.so | lib/libwfdmmsink.so)
         "${PATCHELF}" --add-needed "libshim_wfd.so" "${2}"
         ;;
@@ -93,7 +88,7 @@ if [ -z "${ONLY_COMMON}" ] && [ -s "${MY_DIR}/../${DEVICE}/proprietary-files.txt
 fi
 
 "${MY_DIR}/setup-makefiles.sh"
-=======
+
 # If we're being sourced by the common script that we called,
 # stop right here. No need to go down the rabbit hole.
 
@@ -112,7 +107,7 @@ function blob_fixup() {
 
     # remove android.hidl.base dependency
     vendor/lib/hw/camera.sdm660.so)
-        patchelf --remove-needed "android.hidl.base@1.0.so" "${2}"
+        "${PATCHELF}" --remove-needed "android.hidl.base@1.0.so" "${2}"
         ;;
 
     esac
@@ -124,12 +119,9 @@ fi
 
 set -e
 
-# Required
 export DEVICE=X00TD
 export DEVICE_COMMON=sdm660-common
 export VENDOR=asus
 
-export DEVICE_BRINGUP_YEAR=2020
-
 "./../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"
->>>>>>> b342f4c (X00TD: Import Lineage's commmon extract_utils)
+
