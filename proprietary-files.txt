@@ -717,7 +717,7 @@ vendor/lib64/libmiracast.so|7f13b8bfdafd9d43e7869561bd966cbf5102d80a
 vendor/lib64/libwfdhdcpcp.so|a000d3871eff8a0832f81e01c186434b4e43cb93
 vendor/lib64/vendor.qti.hardware.sigma_miracast@1.0.so|392279cda5b6201f57afe89b3f53f8eac3907ff1
 
-# Device proprietary files - from UL-ASUS_X00T-WW-17.2017.2006.429-user build, unless pinned
+# Device proprietary files - from UL-ASUS_X00T-WW-17.2017.2012.438-user build, unless pinned
 
 # Audio ACDB
 vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
