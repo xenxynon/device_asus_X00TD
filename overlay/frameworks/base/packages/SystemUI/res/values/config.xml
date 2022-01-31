@@ -47,4 +47,11 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
     <!-- If not zero, limits the internal screen recorder's framerate to the set value. -->
     <integer name="config_screenRecorderMaxFramerate">60</integer>
+
+    <!-- FPSInfoService Fps file path -->
+    <string name="config_fpsInfoSysNode" translatable="false">/sys/devices/virtual/graphics/fb0/measured_fps</string>
+ 
+    <dimen name="rounded_corner_content_padding">0dp</dimen>
+
+
 </resources>
