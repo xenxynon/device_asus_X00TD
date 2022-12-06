@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit from sdm660-common
+# Inherit from X00TD
 $(call inherit-product, device/asus/X00TD/sdm660.mk)
 
 # Boot animation
