@@ -15,10 +15,6 @@ TARGET_SCREEN_WIDTH := 1080
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
-# GoogleCameraGoEdition
-PRODUCT_PACKAGES += \
-    GoogleCameraGoEdition
-
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.device.rc
