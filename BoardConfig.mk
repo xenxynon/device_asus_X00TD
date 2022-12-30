@@ -85,7 +85,7 @@ BOARD_HAS_QCA_FM_SOC := cherokee
 BOARD_HAVE_QCOM_FM := true
 
 # Kernel
-TARGET_KERNEL_CONFIG := X00TD_defconfig
+TARGET_KERNEL_CONFIG := X00T_defconfig
 
 # Kernel
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 androidboot.console=ttyMSM0
